@@ -7,14 +7,15 @@ body, h1, h2, h3, p, ul, li {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+  color: #333; /* Default text color */
+  background-color: #f9f9f9; /* Background color */
+  text-align: center; /* Center align all content by default */
 }
 
 /* Header */
 header {
-  background-color: #333;
-  color: white;
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
   padding: 1rem 0;
 }
 header .container {
@@ -24,14 +25,18 @@ header .container {
   max-width: 1200px;
   margin: auto;
   padding: 0 1rem;
+  flex-wrap: wrap; /* Ensures proper wrapping on small screens */
 }
 header h1 {
   font-size: 1.8rem;
+  margin: 0 auto;
+  text-align: center; /* Center header title */
 }
 header nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
+  justify-content: center;
 }
 header nav ul li a {
   text-decoration: none;
@@ -41,7 +46,7 @@ header nav ul li a {
   transition: background-color 0.3s ease;
 }
 header nav ul li a:hover {
-  background-color: #555;
+  background-color: #555; /* Hover effect */
 }
 
 /* Sections */
@@ -49,6 +54,7 @@ header nav ul li a:hover {
   max-width: 1200px;
   margin: auto;
   padding: 1rem;
+  text-align: center; /* Center align all content */
 }
 section {
   padding: 2rem 0;
@@ -56,6 +62,7 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #222; /* Add contrast to section headers */
 }
 section p {
   margin-bottom: 1rem;
@@ -65,14 +72,16 @@ section p {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem auto; /* Center project cards */
+  width: 80%; /* Control card width */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text inside the card */
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #333; /* Footer background */
+  color: white; /* Footer text color */
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
