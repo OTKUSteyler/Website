@@ -1,17 +1,49 @@
-/* Header Navigation */
-header nav ul {
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9; /* Light background */
+  color: #333; /* Default text color */
+  text-align: center; /* Center all content by default */
+}
+
+/* Header */
+header {
+  background-color: #333; /* Dark header */
+  color: white; /* White text */
+  padding: 1rem 0;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Navigation */
+header nav .nav-links {
   list-style: none;
-  display: flex; /* Make it a flex container */
-  justify-content: center; /* Center the items horizontally */
-  gap: 15px; /* Add spacing between buttons */
+  display: flex; /* Create a flex container for horizontal layout */
+  justify-content: center; /* Center align the buttons */
+  gap: 20px; /* Add spacing between the buttons */
+  margin-top: 10px;
   padding: 0;
 }
 
-header nav ul li {
+header nav .nav-links li {
   margin: 0;
 }
 
-header nav ul li a {
+header nav .nav-links li a {
   text-decoration: none;
   color: white;
   padding: 0.5rem 1rem;
@@ -19,6 +51,48 @@ header nav ul li a {
   transition: background-color 0.3s ease;
 }
 
-header nav ul li a:hover {
+header nav .nav-links li a:hover {
   background-color: #555; /* Hover effect */
+}
+
+/* Sections */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+section p {
+  margin-bottom: 1.5rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align card content to the left */
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Footer background */
+  color: white; /* Footer text */
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
 }
