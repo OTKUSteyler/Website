@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f9; /* Light background */
+  background-color: #050511; /* Light background */
   color: #333; /* Default text color */
   text-align: center; /* Center all content by default */
 }
@@ -45,14 +45,14 @@ header nav .nav-links li {
 
 header nav .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: rgb(14, 14, 14);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 header nav .nav-links li a:hover {
-  background-color: #555; /* Hover effect */
+  background-color: #080808; /* Hover effect */
 }
 
 /* Sections */
@@ -77,8 +77,8 @@ section p {
 }
 
 .project-card {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #050505;
+  border: 1px solid #090808;
   border-radius: 8px;
   padding: 1.5rem;
   margin: 1rem auto;
